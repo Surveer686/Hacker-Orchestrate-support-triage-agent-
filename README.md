@@ -1,13 +1,8 @@
-HackerRank Orchestra
-Deterministic Multi-Domain Support Ticket Triage Agent
-Language	Python 3
-Stack	scikit-learn · pandas
-Interface	Terminal / CLI
-LLMs Used	None
-Hallucinations	Zero
-Deterministic	Yes
+
+
 
 Overview
+
 A terminal-based, rule-driven pipeline that classifies, risk-scores, retrieves, ranks, decides, and responds to support tickets across multiple product domains — with full auditability and zero hallucinations. Every decision is explainable and logged.
 
 Domains Covered
