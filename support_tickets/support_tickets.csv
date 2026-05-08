@@ -1,0 +1,16 @@
+issue,subject,company
+"I cannot log into my HackerRank account. I tried resetting my password but never got the email.","Login issue",HackerRank
+"There is a transaction of $500 on my Visa card from last night that I did not make. I think my card details were stolen.","Suspicious transaction",Visa
+"How do I use streaming with the Claude API? I want to get responses faster.","Streaming API",Claude
+"My code compiles fine locally but on HackerRank it says compilation error. I'm using Python 3.","Code not compiling",HackerRank
+"I was charged twice for the same Visa transaction. I need a refund for the duplicate charge.","Double charge",Visa
+"Claude keeps refusing to answer my question even though it's completely legitimate. How do I fix this?","Content refusal",Claude
+"I never received my HackerRank test invitation link. The company said they sent it yesterday.","No invitation received",HackerRank
+"My Visa card was lost. I need to block it immediately and get a new one.","Lost card",Visa
+"What is the context window size for Claude 3? I'm getting errors about too many tokens.","Context limit",Claude
+"I want HackerRank to add a feature for dark mode in the code editor.","Feature request",HackerRank
+"Someone accessed my Claude account without my permission. I'm very worried.","Account breach",Claude
+"The refund from a merchant hasn't appeared on my Visa statement after 10 days.","Refund not received",Visa
+"I got flagged for plagiarism on HackerRank but I wrote all the code myself.","Plagiarism flag",HackerRank
+"How do I update my payment method for Claude API billing?","Billing update",Claude
+"My Visa PIN is not working at ATMs. I need to reset it.","PIN issue",Visa

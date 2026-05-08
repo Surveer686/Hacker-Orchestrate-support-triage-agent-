@@ -1,0 +1,7 @@
+General support routing:
+
+- Fraud/unauthorized/hacked/stolen: escalate immediately.
+- Billing/refund/charged: request transaction details; escalate if ambiguity remains.
+- Login/password: guide through reset and MFA; never ask for passwords or OTPs.
+- Test/assessment: check browser, extensions, network; collect exact error message.
+
