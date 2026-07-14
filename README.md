@@ -96,6 +96,7 @@ Tickets are escalated when:
 project/
 
 ├── main.py
+├── code/web_app.py
 ├── agent.py
 ├── classifier.py
 ├── risk_detector.py
@@ -106,6 +107,8 @@ project/
 ├── justification.py
 ├── logger.py
 ├── utils.py
+├── templates/
+├── static/
 │
 ├── data/
 │   ├── visa_fraud.md
@@ -149,7 +152,15 @@ Default execution
 python main.py
 ```
 
-Custom paths
+Run the interactive web UI
+
+```bash
+python code/web_app.py
+```
+
+Then open http://127.0.0.1:5000/ in your browser.
+
+Custom CLI paths
 
 ```bash
 python main.py <input_csv> <output_csv> <data_dir> <log_path>

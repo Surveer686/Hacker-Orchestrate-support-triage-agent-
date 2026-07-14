@@ -1,0 +1,9 @@
+# Normalize all text files and let Git handle line endings consistently.
+* text=auto
+
+# Explicit text file types
+*.py text
+*.css text
+*.html text
+*.md text
+*.txt text

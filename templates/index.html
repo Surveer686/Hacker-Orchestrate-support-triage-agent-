@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support Triage UI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="panel">
+        <h1>Support Ticket Triage</h1>
+        <p>Submit a ticket and get a deterministic response, risk score, and justification.</p>
+
+        {% if error %}
+        <div class="alert alert-error">{{ error }}</div>
+        {% endif %}
+
+        <form method="post">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Enter ticket subject" />
+
+          <label for="issue">Issue description</label>
+          <textarea id="issue" name="issue" rows="6" placeholder="Describe the issue"></textarea>
+
+          <label for="company">Company / Product (optional)</label>
+          <input id="company" name="company" type="text" placeholder="Optional override" />
+
+          <button type="submit">Evaluate ticket</button>
+        </form>
+      </section>
+
+      {% if result %}
+      <section class="panel result-panel">
+        <h2>Ticket Result</h2>
+        <div class="grid">
+          <div><strong>Status</strong><span>{{ result.status }}</span></div>
+          <div><strong>Product area</strong><span>{{ result.product_area }}</span></div>
+          <div><strong>Request type</strong><span>{{ result.request_type }}</span></div>
+        </div>
+
+        <div class="field">
+          <strong>Response</strong>
+          <pre>{{ result.response }}</pre>
+        </div>
+
+        <div class="field">
+          <strong>Justification</strong>
+          <pre>{{ result.justification }}</pre>
+        </div>
+
+        <div class="details">
+          <div><strong>Raw input</strong><pre>{{ result._raw_input }}</pre></div>
+          <div><strong>Cleaned input</strong><pre>{{ result._cleaned }}</pre></div>
+          <div><strong>Risk</strong><span>{{ result._risk }}</span></div>
+          <div><strong>Top document path</strong><span>{{ result._top_doc_path or 'None' }}</span></div>
+          <div><strong>Top similarity</strong><span>{{ result._top_doc_score or 'N/A' }}</span></div>
+          <div><strong>Decision reason</strong><span>{{ result._decision_reason }}</span></div>
+        </div>
+      </section>
+      {% endif %}
+    </main>
+  </body>
+</html>
